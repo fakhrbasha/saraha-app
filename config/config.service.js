@@ -12,7 +12,7 @@ let NODE_PATH = {
 }
 dotenv.config({ path: resolve(`config/${NODE_PATH[NODE_ENV]}`) })
 
-export const PORT = +process.env.PORT
+export const PORT = +process.env.PORT || 3000
 
 export const SALT_ROUND = +process.env.SALT_ROUND
 export const DB_URI = process.env.DB_URI
